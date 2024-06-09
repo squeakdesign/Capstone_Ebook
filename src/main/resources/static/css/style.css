@@ -1,0 +1,41 @@
+@charset "ISO-8859-1";
+
+.card-sh {
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.3);
+}
+
+.cat-div{
+	box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+.navbar{
+	background-color: #f6513e;
+}
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+a:hover {
+	text-shadow: 0 0 10px white, 0 0 20px white;
+}
+.card{
+	transition: transform 0.5s;
+}
+.card:hover{
+	transform:translateY(-20px) ;
+	/* transform: scale(150%); */
+}
+.container-fluid{
+	background-color: #f6513e;
+}
+#log{
+	background: #f6513e;
+}
+#log:hover{
+	background: #ec9b9b;
+	color: #ba032e;
+
+	box-shadow: 2px 2px 5px #00000056;
+	transform: scale(110%);
+
+
+}
