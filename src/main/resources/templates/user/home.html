@@ -1,10 +1,71 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Insert Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="container">-->
+<!--<h1>User Home Page</h1>-->
+<!--    <div class="welcome">-->
+<!--        <p>Welcome, <span >User</span>!</p>-->
+<!--        <p>Your email is: <span>user@example.com</span></p>-->
+<!--    </div>-->
+
+<!--    </div>-->
+
+<!--</body>-->
+<!--</html>-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{base::layout(~{::section})}">
 <head>
-    <meta charset="UTF-8">
-    <title>Insert Title</title>
+    <meta charset="ISO-8859-1">
+    <title>Insert title here</title>
 </head>
 <body>
-<h1>User Home Page</h1>
+<section>
+    <div class="container p-5">
+        <p class="text-center fs-3 mt-4">User Dashboard</p>
+        <div class="row p-5">
+            <div class="col-md-4 mt-2">
+                <a href="#" class="text-decoration-none">
+                    <div class="card card-sh">
+                        <div class="card-body text-center text-primary">
+                            <i class="fa-solid fa-square-plus fa-3x"></i>
+                            <h4>Add to Cart</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-md-4 mt-2">
+                <a href="/user/product" class="text-decoration-none">
+                    <div class="card card-sh">
+                        <div class="card-body text-center text-warning">
+                            <i class="fa-solid fa-list fa-3x"></i>
+                            <h4>View books</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+            <div class="col-md-4 mt-2">
+                <a href="#" class="text-decoration-none">
+                    <div class="card card-sh">
+                        <div class="card-body text-center text-success">
+                            <i class="fa-solid fa-table-list fa-3x"></i>
+                            <h4>View Cart</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+
+    </div>
+</section>
 </body>
 </html>
